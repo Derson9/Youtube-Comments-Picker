@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-transition-duration: 400ms;
+}
+
+* {
+  transition: background-color var(--theme-transition-duration) ease,
+              color var(--theme-transition-duration) ease,
+              border-color var(--theme-transition-duration) ease,
+              box-shadow var(--theme-transition-duration) ease;
+}
+
+/* Custom styles for range input */
+input[type="range"] {
+  @apply h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none w-4 h-4 rounded-full bg-red-600 dark:bg-red-500 cursor-pointer transition-transform hover:scale-110;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply w-4 h-4 rounded-full bg-red-600 dark:bg-red-500 cursor-pointer border-0 transition-transform hover:scale-110;
+}
