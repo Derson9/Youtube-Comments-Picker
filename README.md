@@ -13,7 +13,6 @@ Built with **Flask** (backend) and **JavaScript** (frontend).
 ## 🚀 Features
 - **Fetch** all comments from a YouTube video.
 - **Display** comment authors and texts.
-- **Randomly** select a winner from the comments.
 - **Dark & Light Mode 🌓**.
 - **Free & Premium 🆓** .
 - **it can handle more than 500k Comments**.
